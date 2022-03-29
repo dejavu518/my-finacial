@@ -168,7 +168,7 @@ export default {
       //设置成功
       myChart.setOption(option);
     },
-    drawPie(){
+    drawPie() {
       let myChart = this.$echarts.init(this.$refs["percent"]);
       let option = {
         tooltip: {
@@ -205,7 +205,6 @@ export default {
           },
         ],
       };
-
       // 绘制图表
       myChart.setOption(option);
     }
