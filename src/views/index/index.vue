@@ -120,6 +120,7 @@ export default {
     this.drawPie()
   },
   methods: {
+    /**曲线图**/
     drawline() {
       //初始化容器
       var myChart = this.$echarts.init(this.$refs["analysis"]);
@@ -164,10 +165,10 @@ export default {
           },
         ],
       };
-
       //设置成功
       myChart.setOption(option);
     },
+    /**饼状图**/
     drawPie() {
       let myChart = this.$echarts.init(this.$refs["percent"]);
       let option = {
@@ -200,7 +201,7 @@ export default {
               { value: 310, name: "新车贷" },
               { value: 234, name: "资金贷" },
               { value: 135, name: "合力贷" },
-              { value: 1548, name: "其他" },
+              { value: 1548, name: "微粒贷" },
             ],
           },
         ],
