@@ -21,14 +21,7 @@
         <el-transfer v-model="value" :data="data"></el-transfer>
       </el-tab-pane>
       <el-tab-pane label="抵押贷款" name="third">
-        <el-tree
-          :data="treedata"
-          show-checkbox
-          node-key="id"
-          :default-expanded-keys="[2, 3]"
-          :default-checked-keys="[5]"
-          :props="defaultProps"
-        ></el-tree>
+        <el-tree :data="treedata" show-checkbox node-key="id" :default-expanded-keys="[2, 3]" :default-checked-keys="[5]" :props="defaultProps"></el-tree>
       </el-tab-pane>
       <el-tab-pane label="其他" name="fourth">其他</el-tab-pane>
     </el-tabs>
@@ -118,7 +111,7 @@ export default {
         },
         {
           date: "2016-05-04",
-          name: "王小虎",
+          name: "张晓刚",
           province: "上海",
           city: "普陀区",
           address: "上海市普陀区金沙江路 1517 弄",
@@ -210,12 +203,12 @@ export default {
           province: "上海",
           city: "普陀区",
           address: "上海市普陀区金沙江路 1516 弄",
-          zip: 200333,
+          zip: 200516,
         },
       ],
     };
   },
-  mounted(){
+  mounted() {
     console.log("tabs1重复渲染了")
   },
   methods: {
