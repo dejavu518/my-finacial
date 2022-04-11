@@ -1,15 +1,14 @@
 <template>
-    <div>
-        页面走丢了
-    </div>
+  <div>
+    哦豁，页面走丢了~~~
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style scoped>
-
 </style>
