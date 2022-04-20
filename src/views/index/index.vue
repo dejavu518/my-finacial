@@ -1,13 +1,6 @@
 <template>
   <div>
     <el-row :gutter="24" style="margin-bottom: 20px">
-      <!-- <el-col :span="6">
-        <el-card shadow="always" class="in">
-          <div></div>
-          <div></div>
-        </el-card>
-      </el-col> -->
-
       <el-col :span="6">
         <el-card shadow="always" class="in">
           <div style="float: left">

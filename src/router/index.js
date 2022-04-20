@@ -25,6 +25,13 @@ const routesMap = [{
           import ("../views/account/all.vue")
       },
       {
+        path: "/account/business",
+        name: "account_bisiness",
+        meta: { bread: ["账户管理", "所有人员"] },
+        component: () =>
+          import ("../views/account/business.vue")
+      },
+      {
         path: "/product/all",
         name: "product_all",
         meta: { bread: ["产品管理", "全部产品"] },
